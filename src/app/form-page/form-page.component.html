@@ -1,0 +1,35 @@
+
+
+
+
+
+<p class="display-2 ms-5 mt-5">math works</p> 
+
+<div class="d-flex">
+    <div class="w-50">
+    
+        <form class="m-5 col-5 text-center"> 
+    
+            <label for="">  Enter your Number</label> 
+    
+            <input type="number" class="form-control my-3" [value]="mycurrentnum" #curr> 
+    
+            <label for="">  Enter your Limit</label> 
+    
+             
+    
+            <input  type="number" class="form-control my-3" [value]="mylimit" #limit> 
+    
+    
+        </form> 
+        
+
+    <button class="btn btn-info my-3 w-50 ms-5" (click)="change(curr.value,limit.value)">Show</button> 
+    </div>
+
+    <ul style="margin-left: 10rem;" class=" w-25 col-7 list list-group list-group-flush text-center"> 
+
+        <li class=" list-group-item" *ngFor="let item of list">{{item}}</li> 
+
+    </ul> 
+</div>
